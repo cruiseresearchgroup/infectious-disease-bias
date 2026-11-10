@@ -53,6 +53,29 @@ const resourceCards = [
   { kind: 'Dataset', title: 'Urban Anomalies', text: 'Simulated human mobility with controlled, labelled anomalies for reproducible stress-testing.', links: [] },
 ];
 
+const partnerGroups = [
+  {
+    id: 'funding-partners',
+    label: 'Funded by',
+    kind: 'funders',
+    logos: [
+      { name: 'U.S. National Science Foundation', src: '/partners/nsf.png', width: 166, height: 166 },
+      { name: 'CSIRO', src: '/partners/csiro.png', width: 164, height: 166 },
+    ],
+  },
+  {
+    id: 'academic-partners',
+    label: 'Academic partners',
+    kind: 'institutions',
+    logos: [
+      { name: 'UNSW Sydney', src: '/partners/unsw-sydney.png', width: 208, height: 90, dark: true },
+      { name: 'George Mason University', src: '/partners/george-mason-university.png', width: 198, height: 232, tall: true },
+      { name: 'Emory University', src: '/partners/emory-university.png', width: 240, height: 136 },
+      { name: 'Arizona State University', src: '/partners/arizona-state-university.png', width: 198, height: 152 },
+    ],
+  },
+];
+
 const partners = ['CSIRO', 'U.S. National Science Foundation', 'UNSW Sydney', 'George Mason University', 'Emory University', 'Arizona State University'];
 const description = 'An Australia–United States research collaboration developing fair and trustworthy AI for forecasting infectious disease spread.';
 ---
@@ -92,6 +115,20 @@ const description = 'An Australia–United States research collaboration develop
         <div class="hero-visual reveal reveal-delay">
           <ResearchGraphic />
         </div>
+      </div>
+      <div class="partner-band shell reveal" aria-label="Project funders and academic partners">
+        {partnerGroups.map((group) => (
+          <div class:list={['partner-group', `partner-group-${group.kind}`]} role="group" aria-labelledby={group.id}>
+            <p class="partner-group-label" id={group.id}>{group.label}</p>
+            <div class="partner-logo-grid">
+              {group.logos.map((logo) => (
+                <div class:list={['partner-logo-cell', { 'partner-logo-cell-dark': logo.dark, 'partner-logo-cell-tall': logo.tall }]}>
+                  <img src={logo.src} width={logo.width} height={logo.height} alt={logo.name} decoding="async" />
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
       <div class="hero-facts shell" aria-label="Project facts">
         <div><strong>3</strong><span>connected research thrusts</span></div>
