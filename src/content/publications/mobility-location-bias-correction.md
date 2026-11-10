@@ -12,8 +12,8 @@ authors:
   - "Chandini Raina MacIntyre"
   - "Andreas Züfle"
 thrust: 3
-year: 2027
-venue: "ACM SIGSPATIAL 2027 · Best Paper Runner-Up · Application Track"
+year: 2026
+venue: "ACM SIGSPATIAL 2026 · Best Paper Runner-Up · Application Track"
 status: "accepted"
 summary: "A human-mobility-informed approach to recovering missing locations and correcting spatial bias in infectious-disease surveillance data."
 tags: ["human mobility", "location inference", "bias correction"]
