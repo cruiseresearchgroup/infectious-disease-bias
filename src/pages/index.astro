@@ -15,6 +15,7 @@ const people = (await getCollection('people')).sort((a, b) => {
   return groupOrder[a.data.group] - groupOrder[b.data.group] || a.data.name.localeCompare(b.data.name);
 });
 const talks = await getCollection('talks');
+const assetPath = (path: string) => `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${path}`;
 
 const nameAliases = new Map([
   ['chandini raina macintyre', 'raina macintyre'],
@@ -81,8 +82,8 @@ const partnerGroups = [
     label: 'Funded by',
     kind: 'funders',
     logos: [
-      { name: 'U.S. National Science Foundation', src: '/partners/nsf.png', width: 166, height: 166 },
-      { name: 'CSIRO', src: '/partners/csiro.png', width: 164, height: 166 },
+      { name: 'U.S. National Science Foundation', src: assetPath('partners/nsf.png'), width: 166, height: 166 },
+      { name: 'CSIRO', src: assetPath('partners/csiro.png'), width: 164, height: 166 },
     ],
   },
   {
@@ -90,10 +91,10 @@ const partnerGroups = [
     label: 'Academic partners',
     kind: 'institutions',
     logos: [
-      { name: 'UNSW Sydney', src: '/partners/unsw-sydney.png', width: 208, height: 90, dark: true },
-      { name: 'George Mason University', src: '/partners/george-mason-university.png', width: 198, height: 232, tall: true },
-      { name: 'Emory University', src: '/partners/emory-university.png', width: 240, height: 136 },
-      { name: 'Arizona State University', src: '/partners/arizona-state-university.png', width: 198, height: 152 },
+      { name: 'UNSW Sydney', src: assetPath('partners/unsw-sydney.png'), width: 208, height: 90, dark: true },
+      { name: 'George Mason University', src: assetPath('partners/george-mason-university.png'), width: 198, height: 232, tall: true },
+      { name: 'Emory University', src: assetPath('partners/emory-university.png'), width: 240, height: 136 },
+      { name: 'Arizona State University', src: assetPath('partners/arizona-state-university.png'), width: 198, height: 152 },
     ],
   },
 ];
