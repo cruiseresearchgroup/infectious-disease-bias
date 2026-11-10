@@ -2,7 +2,7 @@
 
 An English, single-page academic project website inspired by the editorial clarity of the Stanford STAR project site. The implementation uses Astro content collections so project developers can maintain publications without editing page components.
 
-Production site: <https://cruiseresearchgroup.github.io/infectious-disease-bias/>
+Current production site: <https://cruiseresearchgroup.github.io/infectious-disease-bias/>
 
 ## Run locally
 

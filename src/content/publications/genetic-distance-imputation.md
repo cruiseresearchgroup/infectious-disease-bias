@@ -15,7 +15,7 @@ venue: "SIGSPATIAL 2025"
 status: "published"
 summary: "A probabilistic approach to estimating missing genetic distances when pathogen sequencing is sparse or unevenly sampled across locations."
 tags: ["phylogenetics", "imputation", "pathogen models"]
-featured: 3
+featured: 4
 links:
   paper: "https://arxiv.org/abs/2506.09076"
   code: null

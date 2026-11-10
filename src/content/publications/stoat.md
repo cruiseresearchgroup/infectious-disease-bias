@@ -11,7 +11,7 @@ venue: "SIGSPATIAL 2025"
 status: "published"
 summary: "A probabilistic causal network for learning spatial-temporal structure beyond purely correlational forecasting."
 tags: ["causal inference", "spatiotemporal learning", "forecasting"]
-featured: 4
+featured: 5
 links:
   paper: "https://arxiv.org/abs/2506.09544"
   code: null

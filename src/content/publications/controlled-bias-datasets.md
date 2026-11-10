@@ -17,7 +17,7 @@ venue: "KDD 2025"
 status: "published"
 summary: "A reusable benchmark pairing complete simulated ground truth with observable datasets affected by controlled data-collection bias."
 tags: ["benchmark", "agent-based simulation", "data bias"]
-featured: 2
+featured: 3
 links:
   paper: "https://doi.org/10.1145/3711896.3737401"
   code: null
