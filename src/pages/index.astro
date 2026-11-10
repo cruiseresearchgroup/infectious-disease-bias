@@ -15,10 +15,32 @@ const people = (await getCollection('people')).sort((a, b) => {
   return groupOrder[a.data.group] - groupOrder[b.data.group] || a.data.name.localeCompare(b.data.name);
 });
 const talks = await getCollection('talks');
-const coreNames = new Set(people.map((person) => person.data.name.replace('C. ', '').replace('D. ', '')));
-const contributors = [...new Set(publications.flatMap((publication) => publication.data.authors))]
-  .filter((name) => !coreNames.has(name.replace('C. ', '').replace('D. ', '').replace('Flora D. Salim', 'Flora Salim')))
-  .sort((a, b) => a.localeCompare(b));
+
+const nameAliases = new Map([
+  ['chandini raina macintyre', 'raina macintyre'],
+  ['c raina macintyre', 'raina macintyre'],
+  ['raina macintyre', 'raina macintyre'],
+  ['flora d salim', 'flora salim'],
+  ['david j heslop', 'david heslop'],
+]);
+const normalizePersonName = (name: string) => {
+  const normalized = name
+    .normalize('NFKD')
+    .replace(/\p{M}/gu, '')
+    .toLocaleLowerCase('en')
+    .replace(/[^a-z\s-]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return nameAliases.get(normalized) ?? normalized;
+};
+
+const coreNames = new Set(people.map((person) => normalizePersonName(person.data.name)));
+const contributorNames = new Map<string, string>();
+for (const name of publications.flatMap((publication) => publication.data.authors)) {
+  const identity = normalizePersonName(name);
+  if (!coreNames.has(identity) && !contributorNames.has(identity)) contributorNames.set(identity, name);
+}
+const contributors = [...contributorNames.values()].sort((a, b) => a.localeCompare(b));
 
 const thrusts = [
   {
@@ -281,7 +303,7 @@ const description = 'An Australia–United States research collaboration develop
           {people.filter((person) => person.data.group === 'lead').map((person) => (
             <article class="person-card person-card-lead reveal">
               <span class="person-avatar" aria-hidden="true">{person.data.initials}</span>
-              <div><h4>{person.data.name}</h4><p>{person.data.role}</p><span>{person.data.expertise}</span><small>{person.data.affiliation}</small></div>
+              <div><h4>{person.data.name}</h4><p>{person.data.role}</p><span>{person.data.expertise}</span>{person.data.affiliation && <small>{person.data.affiliation}</small>}</div>
             </article>
           ))}
         </div>
@@ -291,7 +313,7 @@ const description = 'An Australia–United States research collaboration develop
           {people.filter((person) => person.data.group === 'investigator').map((person) => (
             <article class="person-card reveal">
               <span class="person-avatar" aria-hidden="true">{person.data.initials}</span>
-              <div><h4>{person.data.name}</h4><p>{person.data.expertise}</p><small>{person.data.affiliation}</small></div>
+              <div><h4>{person.data.name}</h4><p>{person.data.expertise}</p>{person.data.affiliation && <small>{person.data.affiliation}</small>}</div>
             </article>
           ))}
         </div>

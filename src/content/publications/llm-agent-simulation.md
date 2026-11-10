@@ -6,10 +6,10 @@ authors:
   - "Andreas Züfle"
   - "Hao Xue"
   - "Taylor Anderson"
-  - "C. Raina MacIntyre"
+  - "Chandini Raina MacIntyre"
   - "Matthew Scotch"
-  - "Flora D. Salim"
-  - "David J. Heslop"
+  - "Flora Salim"
+  - "David Heslop"
 thrust: 2
 year: 2026
 venue: "Submitted to SIGKDD 2026"

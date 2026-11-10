@@ -3,9 +3,9 @@ title: "EpiScale: Large-Scale Simulation of Infectious Disease Based on Human Mo
 authors:
   - "Ruochen Kong"
   - "Taylor Anderson"
-  - "David J. Heslop"
+  - "David Heslop"
   - "Matthew Scotch"
-  - "Flora D. Salim"
+  - "Flora Salim"
   - "Chandini Raina MacIntyre"
   - "Andreas Züfle"
 thrust: 2

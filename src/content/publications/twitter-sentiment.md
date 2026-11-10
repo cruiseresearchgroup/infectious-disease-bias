@@ -1,9 +1,9 @@
 ---
 title: "Towards Using Tweet Sentiment for Infectious Disease Detection"
 authors:
-  - "J. Stassinos"
-  - "T. Anderson"
-  - "A. Züfle"
+  - "James Stassinos"
+  - "Taylor Anderson"
+  - "Andreas Züfle"
 thrust: 1
 year: 2025
 venue: "PLOS ONE · 20(6), e0325166"

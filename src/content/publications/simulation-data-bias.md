@@ -11,7 +11,7 @@ authors:
   - "Ruochen Kong"
   - "David Heslop"
   - "Hye-Young Paik"
-  - "C. Raina MacIntyre"
+  - "Chandini Raina MacIntyre"
 thrust: 2
 year: 2024
 venue: "ACM Transactions on Spatial Algorithms and Systems"

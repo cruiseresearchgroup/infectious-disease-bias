@@ -1,11 +1,11 @@
 ---
 title: "Evaluating the Transferability of a Synthetic Population Generation Approach for Public Health Applications"
 authors:
-  - "E. Von Hoene"
-  - "A. Gupta"
-  - "H. Kavak"
-  - "A. Roess"
-  - "T. Anderson"
+  - "Emma Von Hoene"
+  - "Aanya Gupta"
+  - "Hamdi Kavak"
+  - "Amira Roess"
+  - "Taylor Anderson"
 thrust: 2
 year: 2025
 venue: "Winter Simulation Conference 2025"

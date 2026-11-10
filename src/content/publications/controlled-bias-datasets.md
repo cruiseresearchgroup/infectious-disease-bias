@@ -4,12 +4,12 @@ authors:
   - "Ruochen Kong"
   - "Taylor Anderson"
   - "Matthew Scotch"
-  - "David J. Heslop"
+  - "David Heslop"
   - "Yonchanok Khaokaew"
   - "Hao Xue"
   - "Li Xiong"
-  - "Raina MacIntyre"
-  - "Flora D. Salim"
+  - "Chandini Raina MacIntyre"
+  - "Flora Salim"
   - "Andreas Züfle"
 thrust: 2
 year: 2025

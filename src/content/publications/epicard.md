@@ -5,7 +5,7 @@ authors:
   - "Hao Xue"
   - "Andreas Züfle"
   - "Chandini Raina MacIntyre"
-  - "Flora D. Salim"
+  - "Flora Salim"
 thrust: 1
 year: 2026
 venue: "Submitted to NeurIPS 2026"

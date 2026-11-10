@@ -8,7 +8,7 @@ authors:
   - "David Heslop"
   - "Andreas Züfle"
   - "Chandini Raina MacIntyre"
-  - "Flora D. Salim"
+  - "Flora Salim"
 thrust: 1
 year: 2025
 venue: "SIGSPATIAL 2025"

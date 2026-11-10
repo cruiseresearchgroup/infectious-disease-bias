@@ -2,13 +2,13 @@
 title: "Evaluating the Bias in LLMs for Surveying Opinion and Decision Making in Healthcare"
 authors:
   - "Yonchanok Khaokaew"
-  - "Flora D. Salim"
+  - "Flora Salim"
   - "Andreas Züfle"
   - "Hao Xue"
   - "Taylor Anderson"
-  - "C. Raina MacIntyre"
+  - "Chandini Raina MacIntyre"
   - "Matthew Scotch"
-  - "David J. Heslop"
+  - "David Heslop"
 thrust: 3
 year: 2025
 venue: "Preprint"

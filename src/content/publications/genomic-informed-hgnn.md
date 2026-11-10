@@ -8,7 +8,7 @@ authors:
   - "Hao Xue"
   - "Andreas Züfle"
   - "Chandini Raina MacIntyre"
-  - "Flora D. Salim"
+  - "Flora Salim"
 thrust: 1
 year: 2026
 venue: "The Web Conference 2026 · Web4Good Special Track"

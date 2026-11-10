@@ -11,7 +11,7 @@ authors:
   - "Matthew Scotch"
   - "Andreas Züfle"
   - "Chandini Raina MacIntyre"
-  - "Flora D. Salim"
+  - "Flora Salim"
 thrust: 1
 year: 2026
 venue: "Preprint"
