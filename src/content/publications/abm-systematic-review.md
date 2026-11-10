@@ -17,7 +17,7 @@ thrust: 2
 year: 2026
 venue: "Journal of Artificial Societies and Social Simulation · 29(1):7"
 status: "published"
-summary: "A systematic review identifying when COVID-19 agent-based models were useful and where their assumptions limited public-health impact."
+summary: "A systematic review identifying when COVID-19 agent-based models were useful and where their assumptions limited public health impact."
 tags: ["systematic review", "agent-based models", "COVID-19"]
 featured: null
 links:

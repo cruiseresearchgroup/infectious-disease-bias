@@ -13,7 +13,7 @@ thrust: 2
 year: 2025
 venue: "IEEE MDM 2025"
 status: "published"
-summary: "A constrained large-language-model approach for producing plausible synthetic human mobility trajectories."
+summary: "A constrained approach based on large language models for generating plausible synthetic human-mobility trajectories."
 tags: ["LLMs", "synthetic mobility", "trajectory generation"]
 featured: null
 links:

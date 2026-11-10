@@ -10,7 +10,7 @@ thrust: 2
 year: 2025
 venue: "Winter Simulation Conference 2025"
 status: "published"
-summary: "An assessment of whether synthetic population methods remain useful when transferred across public-health settings."
+summary: "An assessment of whether synthetic population methods remain useful when transferred across public health settings."
 tags: ["synthetic populations", "transferability", "public health"]
 featured: null
 links:

@@ -13,7 +13,7 @@ thrust: 3
 year: 2025
 venue: "Preprint"
 status: "preprint"
-summary: "An evaluation of demographic and social bias when LLMs are used to survey opinions or support healthcare decisions."
+summary: "An evaluation of demographic and social biases that can arise when LLMs are used to survey public opinion or support healthcare decision-making."
 tags: ["LLM bias", "healthcare", "decision support"]
 featured: null
 links:

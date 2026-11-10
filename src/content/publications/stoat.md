@@ -9,7 +9,7 @@ thrust: 1
 year: 2025
 venue: "SIGSPATIAL 2025"
 status: "published"
-summary: "A probabilistic causal network for learning spatial-temporal structure beyond purely correlational forecasting."
+summary: "A probabilistic causal network for learning spatiotemporal structure beyond purely correlational forecasting."
 tags: ["causal inference", "spatiotemporal learning", "forecasting"]
 featured: 5
 links:
