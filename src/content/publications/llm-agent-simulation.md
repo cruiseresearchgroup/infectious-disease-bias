@@ -8,7 +8,7 @@ authors:
   - "Taylor Anderson"
   - "Chandini Raina MacIntyre"
   - "Matthew Scotch"
-  - "Flora Salim"
+  - "Flora D. Salim"
   - "David Heslop"
 thrust: 2
 year: 2026

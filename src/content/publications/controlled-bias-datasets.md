@@ -9,7 +9,7 @@ authors:
   - "Hao Xue"
   - "Li Xiong"
   - "Chandini Raina MacIntyre"
-  - "Flora Salim"
+  - "Flora D. Salim"
   - "Andreas Züfle"
 thrust: 2
 year: 2025

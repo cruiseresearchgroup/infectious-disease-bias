@@ -5,7 +5,7 @@ authors:
   - "Jing Du"
   - "Haley Stone"
   - "Hao Xue"
-  - "Flora Salim"
+  - "Flora D. Salim"
 thrust: 1
 year: 2026
 venue: "SIGSPATIAL 2026 · Application Track"

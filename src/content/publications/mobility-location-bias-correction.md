@@ -7,7 +7,7 @@ authors:
   - "Haley Stone"
   - "Matthew Scotch"
   - "Jing Du"
-  - "Flora Salim"
+  - "Flora D. Salim"
   - "Taylor Anderson"
   - "Chandini Raina MacIntyre"
   - "Andreas Züfle"

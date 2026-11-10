@@ -4,7 +4,7 @@ authors:
   - "Yang Yang"
   - "Du Yin"
   - "Hao Xue"
-  - "Flora Salim"
+  - "Flora D. Salim"
 thrust: 1
 year: 2025
 venue: "SIGSPATIAL 2025"

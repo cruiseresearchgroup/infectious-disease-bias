@@ -5,7 +5,7 @@ authors:
   - "Taylor Anderson"
   - "David Heslop"
   - "Matthew Scotch"
-  - "Flora Salim"
+  - "Flora D. Salim"
   - "Chandini Raina MacIntyre"
   - "Andreas Züfle"
 thrust: 2

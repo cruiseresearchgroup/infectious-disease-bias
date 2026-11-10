@@ -2,7 +2,7 @@
 title: "Leveraging Simulation Data to Understand Bias in Predictive Models of Infectious Disease Spread"
 authors:
   - "Andreas Züfle"
-  - "Flora Salim"
+  - "Flora D. Salim"
   - "Taylor Anderson"
   - "Matthew Scotch"
   - "Li Xiong"

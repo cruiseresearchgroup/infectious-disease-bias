@@ -2,7 +2,7 @@
 title: "Evaluating the Bias in LLMs for Surveying Opinion and Decision Making in Healthcare"
 authors:
   - "Yonchanok Khaokaew"
-  - "Flora Salim"
+  - "Flora D. Salim"
   - "Andreas Züfle"
   - "Hao Xue"
   - "Taylor Anderson"
