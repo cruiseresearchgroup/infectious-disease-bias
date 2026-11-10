@@ -30,8 +30,9 @@ const linkLabels: Record<string, string> = {
     {publications.map((publication) => {
       const { title, authors, thrust, year, venue, status, summary, tags, links } = publication.data;
       const availableLinks = Object.entries(links).filter((entry): entry is [string, string] => Boolean(entry[1]));
+      const publicationAnchor = publication.id.replace(/\.md$/, '').replace(/[^a-z0-9-]/gi, '-');
       return (
-        <article class="publication-card" data-publication data-thrust={String(thrust)}>
+        <article id={`publication-${publicationAnchor}`} class="publication-card" data-publication data-thrust={String(thrust)}>
           <div class="publication-index" aria-hidden="true">T{thrust}</div>
           <div class="publication-main">
             <div class="publication-meta">

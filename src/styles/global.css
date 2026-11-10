@@ -249,6 +249,75 @@ img, svg { max-width: 100%; }
 .partner-logo-cell-tall img { max-height: 70px; }
 .partner-logo-cell-dark { background: var(--ink); }
 .partner-logo-cell-dark img { max-height: 42px; }
+.award-highlight {
+  position: relative;
+  z-index: 2;
+  min-height: 168px;
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  overflow: hidden;
+  margin-top: 1.5rem;
+  padding: 1.5rem 1.75rem;
+  color: white;
+  background: linear-gradient(108deg, #762b40 0%, var(--berry) 52%, #6c293d 100%);
+  box-shadow: 0 18px 44px rgba(72, 24, 38, .16);
+}
+.award-highlight::before {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  content: "";
+  background: var(--gold);
+}
+.award-highlight::after {
+  position: absolute;
+  right: -70px;
+  bottom: -110px;
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 50%;
+  content: "";
+}
+.award-emblem {
+  width: 108px;
+  height: 108px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,.38);
+  border-radius: 50%;
+  color: #f2c766;
+  text-align: center;
+}
+.award-emblem span { font-family: var(--font-serif); font-size: 2rem; line-height: 1; }
+.award-emblem strong { margin-top: .45rem; font-size: .58rem; letter-spacing: .13em; text-transform: uppercase; }
+.award-copy { position: relative; z-index: 1; }
+.award-copy p { margin: 0 0 .35rem; color: #f2c766; font-size: .66rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.award-copy h2 { margin: 0; font-family: var(--font-serif); font-size: clamp(1.85rem, 3vw, 3rem); font-weight: 500; line-height: 1.05; }
+.award-copy > span { display: block; max-width: 780px; margin-top: .6rem; color: rgba(255,255,255,.78); font-size: .86rem; }
+.award-action {
+  position: relative;
+  z-index: 1;
+  min-width: 178px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .85rem 1rem;
+  background: var(--gold);
+  color: var(--ink);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background .2s ease, transform .2s ease;
+}
+.award-action:hover { background: #f2c766; transform: translateY(-2px); }
 .hero-facts {
   position: relative;
   z-index: 2;
@@ -396,6 +465,10 @@ img, svg { max-width: 100%; }
   .partner-band { grid-template-columns: 1fr; }
   .partner-group:first-child { padding-left: 1.5rem; }
   .partner-group + .partner-group { border-top: 1px solid var(--line); border-left: 0; }
+  .award-highlight { grid-template-columns: 98px minmax(0, 1fr); }
+  .award-emblem { width: 88px; height: 88px; }
+  .award-emblem span { font-size: 1.65rem; }
+  .award-action { grid-column: 2; width: fit-content; }
   .section-grid { grid-template-columns: 1fr; gap: 2rem; }
   .challenge-copy { padding-top: 0; }
   .thrust-card { padding-inline: 1.5rem; }
@@ -432,6 +505,7 @@ img, svg { max-width: 100%; }
   .partner-group:first-child { padding-left: 0; }
   .partner-group-institutions .partner-logo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .partner-logo-cell { min-height: 86px; }
+  .award-highlight { min-height: 0; padding: 1.35rem; }
   .hero-facts { grid-template-columns: repeat(3, 1fr); }
   .hero-facts > div { padding: 1rem .7rem; }
   .hero-facts > div:first-child { padding-left: .7rem; }
@@ -466,6 +540,10 @@ img, svg { max-width: 100%; }
 @media (max-width: 520px) {
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 1rem; }
   .button-primary { width: 100%; }
+  .award-highlight { grid-template-columns: 1fr; gap: 1rem; }
+  .award-emblem { width: auto; height: auto; flex-direction: row; justify-content: flex-start; gap: .65rem; padding-bottom: .8rem; border: 0; border-bottom: 1px solid rgba(255,255,255,.24); border-radius: 0; }
+  .award-emblem strong { margin-top: 0; }
+  .award-action { grid-column: 1; width: 100%; }
   .hero-facts { grid-template-columns: 1fr; }
   .hero-facts > div { min-height: 86px; display: grid; grid-template-columns: 52px 1fr; align-items: center; border-right: 0; border-bottom: 1px solid var(--line); }
   .hero-facts span { margin-top: 0; }

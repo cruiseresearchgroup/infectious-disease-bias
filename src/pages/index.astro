@@ -10,6 +10,7 @@ const publications = (await getCollection('publications')).filter((publication) 
   return featuredA - featuredB || b.data.year - a.data.year || a.data.title.localeCompare(b.data.title);
 });
 const featured = publications.filter((publication) => publication.data.featured).slice(0, 4);
+const awardPublication = publications.find((publication) => publication.id.replace(/\.md$/, '') === 'mobility-location-bias-correction');
 const people = (await getCollection('people')).sort((a, b) => {
   const groupOrder = { lead: 0, investigator: 1 };
   return groupOrder[a.data.group] - groupOrder[b.data.group] || a.data.name.localeCompare(b.data.name);
@@ -152,6 +153,22 @@ const description = 'An Australia–United States research collaboration develop
           </div>
         ))}
       </div>
+      {awardPublication && (
+        <aside class="award-highlight shell reveal" aria-labelledby="award-highlight-title">
+          <div class="award-emblem" aria-hidden="true">
+            <span>2027</span>
+            <strong>Runner-Up</strong>
+          </div>
+          <div class="award-copy">
+            <p>ACM SIGSPATIAL · Application Track</p>
+            <h2 id="award-highlight-title">Best Paper Runner-Up</h2>
+            <span>{awardPublication.data.title}</span>
+          </div>
+          <a class="award-action" href="#publication-mobility-location-bias-correction">
+            View publication <span aria-hidden="true">↓</span>
+          </a>
+        </aside>
+      )}
       <div class="hero-facts shell" aria-label="Project facts">
         <div><strong>3</strong><span>connected research thrusts</span></div>
         <div><strong>{publications.length}</strong><span>research outputs</span></div>
