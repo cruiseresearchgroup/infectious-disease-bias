@@ -7,9 +7,9 @@
     "type": "symposium",
     "summary": "This symposium connects advances in AI and large language models with practical methods for outbreak forecasting and simulation, public health translation, and government engagement.",
     "links": {
-      "event": null,
+      "event": "https://events.unsw.edu.au/event/ai-outbreak-forecasting-are-we-seeing-full-picture",
       "slides": null,
-      "video": null
+      "video": "https://www.youtube.com/watch?v=rL_ViOjzsPA&list=PLvW1evjftfvnDr5S6u0t_1A4P9ik0E0vZ"
     }
   }
 ]

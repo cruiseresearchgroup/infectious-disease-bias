@@ -424,6 +424,9 @@ img, svg { max-width: 100%; }
 .talk-card h3 { max-width: 850px; margin: 3rem 0 1.3rem; font-family: var(--font-serif); font-size: clamp(2.2rem, 4vw, 4.2rem); font-weight: 500; line-height: 1.03; }
 .talk-card > p { max-width: 750px; color: rgba(255,255,255,.72); }
 .talk-card footer { display: flex; justify-content: space-between; gap: 2rem; margin-top: 2.4rem; padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,.2); font-size: .75rem; }
+.talk-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .7rem 1.2rem; }
+.talk-links a { padding-bottom: .18rem; border-bottom: 1px solid rgba(255,255,255,.54); font-size: .68rem; font-weight: 760; letter-spacing: .055em; text-decoration: none; text-transform: uppercase; }
+.talk-links a:hover { color: #f2c766; border-color: #f2c766; }
 .talks .links-pending { color: rgba(255,255,255,.62); }
 
 .people { background: var(--surface); }
@@ -556,6 +559,7 @@ img, svg { max-width: 100%; }
   .people-grid, .people-grid-leads { grid-template-columns: 1fr; }
   .person-card { min-height: 210px; }
   .talk-card footer, .footer-bottom { flex-direction: column; }
+  .talk-links { justify-content: flex-start; }
 }
 
 @media (prefers-reduced-motion: reduce) {

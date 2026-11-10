@@ -299,7 +299,13 @@ const description = 'An Australia–United States research collaboration develop
               <p>{talk.data.summary}</p>
               <footer>
                 <span>{talk.data.location}</span>
-                <span class="links-pending">Event media forthcoming</span>
+                {talk.data.links.event || talk.data.links.slides || talk.data.links.video ? (
+                  <div class="talk-links" aria-label={`Links for ${talk.data.title}`}>
+                    {talk.data.links.event && <a href={talk.data.links.event} target="_blank" rel="noreferrer">Event page <span aria-hidden="true">↗</span></a>}
+                    {talk.data.links.slides && <a href={talk.data.links.slides} target="_blank" rel="noreferrer">Slides <span aria-hidden="true">↗</span></a>}
+                    {talk.data.links.video && <a href={talk.data.links.video} target="_blank" rel="noreferrer">Watch on YouTube <span aria-hidden="true">↗</span></a>}
+                  </div>
+                ) : <span class="links-pending">Event media forthcoming</span>}
               </footer>
             </article>
           ))}
