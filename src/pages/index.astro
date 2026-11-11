@@ -36,11 +36,22 @@ const normalizePersonName = (name: string) => {
   return nameAliases.get(normalized) ?? normalized;
 };
 
+const keyTeamMembers = [
+  'Jing Du',
+  'Yonchanok Khaokaew',
+  'Ruochen Kong',
+  'Owen Tucker',
+  'Haley Stone',
+  'Yang Yang',
+  'Ashna Desai',
+  'Toan Tran',
+].sort((a, b) => a.localeCompare(b));
 const coreNames = new Set(people.map((person) => normalizePersonName(person.data.name)));
+const keyTeamNames = new Set(keyTeamMembers.map(normalizePersonName));
 const contributorNames = new Map<string, string>();
 for (const name of publications.flatMap((publication) => publication.data.authors)) {
   const identity = normalizePersonName(name);
-  if (!coreNames.has(identity) && !contributorNames.has(identity)) contributorNames.set(identity, name);
+  if (!coreNames.has(identity) && !keyTeamNames.has(identity) && !contributorNames.has(identity)) contributorNames.set(identity, name);
 }
 const contributors = [...contributorNames.values()].sort((a, b) => a.localeCompare(b));
 
@@ -332,11 +343,21 @@ const description = 'An Australia–United States research collaboration develop
         </div>
 
         <h3 class="group-label">Investigators</h3>
-        <div class="people-grid">
+        <div class="people-grid people-grid-investigators">
           {people.filter((person) => person.data.group === 'investigator').map((person) => (
             <article class="person-card reveal">
               <span class="person-avatar" aria-hidden="true">{person.data.initials}</span>
               <div><h4>{person.data.name}</h4><p>{person.data.expertise}</p>{person.data.affiliation && <small>{person.data.affiliation}</small>}</div>
+            </article>
+          ))}
+        </div>
+
+        <h3 class="group-label">Key team members</h3>
+        <div class="people-grid people-grid-key-team">
+          {keyTeamMembers.map((name) => (
+            <article class="person-card person-card-key-team reveal">
+              <span class="person-avatar" aria-hidden="true">{name.split(' ').map((part) => part[0]).join('')}</span>
+              <div><h4>{name}</h4><p>Key team member</p></div>
             </article>
           ))}
         </div>

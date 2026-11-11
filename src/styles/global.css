@@ -433,7 +433,9 @@ img, svg { max-width: 100%; }
 .group-label { margin: 3rem 0 1.2rem; color: var(--muted); font-size: .68rem; letter-spacing: .13em; text-transform: uppercase; }
 .people-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .people-grid-leads { grid-template-columns: repeat(2, 1fr); }
+.people-grid-investigators { grid-template-columns: repeat(3, 1fr); }
 .person-card { min-height: 250px; display: flex; flex-direction: column; justify-content: space-between; gap: 2.5rem; padding: 1.6rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.person-card-key-team { min-height: 200px; }
 .person-card-lead { min-height: 280px; flex-direction: row; align-items: end; }
 .person-avatar { width: 52px; height: 52px; display: grid; flex: 0 0 auto; place-items: center; border-radius: 50%; background: var(--teal); color: white; font-family: var(--font-serif); font-size: 1rem; }
 .person-card-lead .person-avatar { width: 78px; height: 78px; background: var(--ink); font-size: 1.3rem; }

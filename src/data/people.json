@@ -70,26 +70,6 @@
     "profile": null
   },
   {
-    "id": "hye-young-paik",
-    "name": "Hye-Young Paik",
-    "initials": "HP",
-    "group": "investigator",
-    "role": "Investigator",
-    "expertise": "Intelligent systems and outbreak intelligence",
-    "affiliation": "UNSW Sydney",
-    "profile": null
-  },
-  {
-    "id": "kacper-sokol",
-    "name": "Kacper Sokol",
-    "initials": "KS",
-    "group": "investigator",
-    "role": "Investigator",
-    "expertise": "Explainable, transparent and fair AI",
-    "affiliation": "",
-    "profile": null
-  },
-  {
     "id": "hao-xue",
     "name": "Hao Xue",
     "initials": "HX",
