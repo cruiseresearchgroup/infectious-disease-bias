@@ -48,10 +48,11 @@ const keyTeamMembers = [
 ].sort((a, b) => a.name.localeCompare(b.name));
 const coreNames = new Set(people.map((person) => normalizePersonName(person.data.name)));
 const keyTeamNames = new Set(keyTeamMembers.map((member) => normalizePersonName(member.name)));
+const contributorExclusions = new Set(['Kacper Sokol', 'Hye-Young Paik'].map(normalizePersonName));
 const contributorNames = new Map<string, string>();
 for (const name of publications.flatMap((publication) => publication.data.authors)) {
   const identity = normalizePersonName(name);
-  if (!coreNames.has(identity) && !keyTeamNames.has(identity) && !contributorNames.has(identity)) contributorNames.set(identity, name);
+  if (!coreNames.has(identity) && !keyTeamNames.has(identity) && !contributorExclusions.has(identity) && !contributorNames.has(identity)) contributorNames.set(identity, name);
 }
 const contributors = [...contributorNames.values()].sort((a, b) => a.localeCompare(b));
 
